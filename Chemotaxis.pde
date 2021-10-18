@@ -1,9 +1,9 @@
 
-class Walker
+class Bacteria
 {
   int myX, myY;
   int myColor;
-  Walker()
+  Bacteria()
   {
     myX=500;
     myY=250;
@@ -21,17 +21,17 @@ class Walker
   }
 }
 
-Walker bacteria;
-Walker [] betterOldPplHome= new Walker[100];
+Bacteria Coins;
+Bacteria [] betterOldPplHome= new Bacteria[1000];
 
 void setup(){
   size(1000,500);
   background(0);
   frameRate(30);
- bacteria= new Walker();
+ Coins= new Bacteria();
 int i=0;
 while(i<betterOldPplHome.length){
-  betterOldPplHome[i]= new Walker();
+  betterOldPplHome[i]= new Bacteria();
   i++;
 }
   
@@ -43,6 +43,6 @@ void draw(){
     betterOldPplHome[i].walk();
     betterOldPplHome[i].show();
   }
-  bacteria.walk();
-  bacteria.show();
-}  
+  Coins.walk();
+  Coins.show();
+}
